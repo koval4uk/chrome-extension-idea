@@ -14,8 +14,3 @@
 ### Debug background.js:
 1. Extension setting 
 1. Click on Extension background page
-
-
-### Debug popup.js:
-1. Click on extension icon (open popup)
-1. Inspect popup

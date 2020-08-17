@@ -7,7 +7,7 @@
     "activeTab",
     "declarativeContent",
     "storage",
-    "https://*/"
+    "https://www.codewars.com/*"
   ],
   "devtools_page": "devtools.html",
   "background": {

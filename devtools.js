@@ -8,26 +8,19 @@ chrome.devtools.network.onRequestFinished.addListener(request => {
   if ( request.request.url.endsWith(searchString)) {
     request.getContent((body) => {
       console.log("intercept body = " + body);
-      sendRequest();
+      sendRequest(body);
     });
   }
 });
 
-function sendRequest() {
-  // todo add jQuery for post request
-  let xhr = new XMLHttpRequest();
-// todo server https://webhook.site/#!/046cccae-578c-4776-ae45-1aa382c45dbd/0b788c0f-ec16-4cd4-9280-5c17de0fbfcf/1
-  xhr.open('GET', 'https://webhook.site/046cccae-578c-4776-ae45-1aa382c45dbd', false);
+const url = "http://127.0.0.1:63350/api.keymapSwitcher";
+// const url = "https://webhook.site/046cccae-578c-4776-ae45-1aa382c45dbd";
 
-  try {
-    xhr.send();
-    if (xhr.status !== 200) {
-      console.log(`Ошибка ${xhr.status}: ${xhr.statusText}`);
-    } else {
-      console.log(xhr.response);
-    }
-  }
-  catch (err) { // для отлова ошибок используем конструкцию try...catch вместо onerror
-    console.log("Запрос не удался");
-  }
+function sendRequest(body) {
+  fetch(url, {
+    method: "POST",
+    body: JSON.stringify(body)
+  }).then(res => {
+    console.log("Request complete! response: ", res);
+  });
 }

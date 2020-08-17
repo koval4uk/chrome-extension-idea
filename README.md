@@ -6,16 +6,16 @@
 
 ### Debug devtools.js:
 1. Open web page
-1. Open Chrome Dev Tools
-1. Switch devtools tab in Chrome Dev Tools for current web page
-1. Open Chrome Dev Tools in my devtools tab
+1. Open Chrome Dev Tools (F12)
+1. Open "MyPanel24" tab
+1. Open Chrome Dev Tools in "MyPanel24" 
 
 
 ### Debug background.js:
-1. Setting Extension 
-1. Open extension -> background page
+1. Extension setting 
+1. Click on Extension background page
 
 
 ### Debug popup.js:
-1. Click on extension icon(open popup)
+1. Click on extension icon (open popup)
 1. Inspect popup

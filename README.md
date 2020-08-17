@@ -3,6 +3,7 @@
 1. http://www.adambarth.com/experimental/crx/docs/getstarted.html
 1. https://github.com/learn-anything/chrome-extensions
 
+
 ### Debug devtools.js:
 1. Open web page
 1. Open Chrome Dev Tools
@@ -18,8 +19,3 @@
 ### Debug popup.js:
 1. Click on extension icon(open popup)
 1. Inspect popup
-
-
-### Debug content.js:
-==
-1. 

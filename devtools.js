@@ -14,13 +14,13 @@ chrome.devtools.network.onRequestFinished.addListener(request => {
 });
 
 const url = "http://127.0.0.1:63350/api.keymapSwitcher";
-
+//
 // const url = "https://webhook.site/046cccae-578c-4776-ae45-1aa382c45dbd";
 
 function sendRequest(body) {
   fetch(url, {
     method: "POST",
-    body: JSON.stringify(body),
+    body: body,
     headers: {
       'Content-Type': 'application/json'
     },
